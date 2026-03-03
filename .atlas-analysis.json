@@ -1,0 +1,177 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Beads",
+  "projectDescription": "Distributed, git-backed graph issue tracker for AI coding agents with Dolt-powered version control",
+  "theme": "aspen",
+  "primaryColor": "#2563EB",
+  "lightColor": "#60A5FA",
+  "darkColor": "#1E40AF",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/issues",
+              "concepts/dependencies",
+              "concepts/workflow",
+              "concepts/dolt-backend"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/agent-workflow",
+              "guides/git-integration",
+              "guides/collaboration",
+              "guides/stealth-mode",
+              "guides/contributor-mode"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/compaction",
+              "advanced/messaging",
+              "advanced/molecular-chemistry",
+              "advanced/federation",
+              "advanced/custom-tables"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "cli/overview"
+            ]
+          },
+          {
+            "group": "Issue Management",
+            "pages": [
+              "cli/init",
+              "cli/create",
+              "cli/update",
+              "cli/show",
+              "cli/list",
+              "cli/close",
+              "cli/delete"
+            ]
+          },
+          {
+            "group": "Workflow Commands",
+            "pages": [
+              "cli/ready",
+              "cli/blocked",
+              "cli/stale",
+              "cli/claim"
+            ]
+          },
+          {
+            "group": "Dependencies & Relationships",
+            "pages": [
+              "cli/dep",
+              "cli/label",
+              "cli/relate",
+              "cli/graph"
+            ]
+          },
+          {
+            "group": "Version Control",
+            "pages": [
+              "cli/dolt",
+              "cli/sync",
+              "cli/hooks",
+              "cli/export-import"
+            ]
+          },
+          {
+            "group": "Maintenance",
+            "pages": [
+              "cli/doctor",
+              "cli/compact",
+              "cli/backup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "AI Agent Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/claude",
+              "integrations/mcp",
+              "integrations/copilot",
+              "integrations/aider"
+            ]
+          },
+          {
+            "group": "External Tools",
+            "pages": [
+              "integrations/github",
+              "integrations/gitlab",
+              "integrations/jira",
+              "integrations/linear"
+            ]
+          },
+          {
+            "group": "Community Tools",
+            "pages": [
+              "integrations/community-tools"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Dolt-powered version-controlled SQL database with cell-level merge",
+    "Hash-based collision-free IDs for multi-agent workflows",
+    "Dependency-aware graph tracking (blocks, relates_to, parent-child, discovered-from)",
+    "Agent-optimized JSON output and auto-ready task detection",
+    "Memory compaction with semantic decay for context window optimization",
+    "Multi-writer access via RPC layer for concurrent operations",
+    "Git integration with automatic hooks for sync workflows",
+    "Stealth and contributor modes for flexible collaboration",
+    "Messaging system with threading and ephemeral lifecycle",
+    "Native branching and sync via Dolt remotes"
+  ],
+  "publicApiSurface": [
+    "bd init - Initialize beads repository",
+    "bd create - Create issues with dependencies and labels",
+    "bd update - Update issue fields and metadata",
+    "bd show - View issue details and audit trail",
+    "bd list - List issues with filtering",
+    "bd ready - Find unblocked work ready to start",
+    "bd blocked - Show blocked issues and dependencies",
+    "bd close - Mark issues as completed",
+    "bd dep - Manage dependencies (add, remove, tree)",
+    "bd label - Manage issue labels",
+    "bd dolt - Dolt operations (push, pull, commit, branch)",
+    "bd sync - Synchronize with remote",
+    "bd compact - Run memory compaction",
+    "bd doctor - Health checks and repairs",
+    "bd hooks - Git hook management",
+    "bd export - Export to JSONL",
+    "bd import - Import from JSONL or external trackers",
+    "bd graph - Visualize dependency graphs",
+    "bd search - Full-text search across issues",
+    "bd stale - Find stale issues"
+  ]
+}
